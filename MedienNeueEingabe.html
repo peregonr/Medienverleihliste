@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.medien {
+     float: left;
+    margin: 5px;
+    padding: 15px;
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
+	background-color: #e6f2ff;
+}
+.liste {
+margin: 5px;
+padding: 15px;
+width: 300px; 
+height: 300px;
+}
+ 
+</style>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script>
+
+
+function neueEingabeList(){
+	var item = document.getElementById("neueEingabeInput").value
+	var text = document.createTextNode(item)
+	var newItem = document.createElement("li")
+	newItem.appendChild(text)
+	document.getElementById("neueEingabeList").appendChild(newItem)
+}
+
+
+
+</script> 
+</head>
+<body>
+
+<h1>Medienverleih</h1>
+
+<div class="medien">
+<h2>Neue Medien</h2>
+<br>
+<form id="neueEingabeForm">
+<input id="neueEingabeInput">
+<button type="button" onClick="neueEingabeList()"> Neue Eingabe </form>
+</div>
+
+<div class="liste">
+<ol id="neueEingabeList"></ol>
+</div>
+</body>
+</html>
