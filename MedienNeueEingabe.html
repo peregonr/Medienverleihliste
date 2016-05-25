@@ -17,7 +17,7 @@ padding: 15px;
 width: 300px; 
 height: 300px;
 }
- 
+
 </style>
 <link rel="stylesheet" type="text/css" href="style.css">
 <script>
@@ -44,11 +44,23 @@ function neueEingabeList(){
 <br>
 <form id="neueEingabeForm">
 <input id="neueEingabeInput">
-<button type="button" onClick="neueEingabeList()"> Neue Eingabe </form>
+<button type="button" onClick="neueEingabeList()"> Titel</form>
 </div>
 
 <div class="liste">
 <ol id="neueEingabeList"></ol>
 </div>
+
+<form id="form_2">
+		<label id="h2" form="form_2">Neues Medium</label>
+		<label class="input" for="titel">Titel</label>
+		<input type="titel" id="titel" maxlength="30">
+		<label class="input" for="autor">Autor</label>
+		<input type="autor" id="autor" maxlength="40">
+		<label class="input" for="datum">Datum</label>
+		<input type="datum" for="datum" maxlength="400">
+		<button type="submit">Neuer Eintrag</button>
+	</form>
+
 </body>
 </html>
